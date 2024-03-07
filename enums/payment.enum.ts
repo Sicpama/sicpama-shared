@@ -17,6 +17,7 @@ export enum PaymentGatewayType {
   KICC = 'kicc',
   AIRWALLEX = 'airwallex',
   ONE_PG = 'one-pg',
+  ADYEN = 'adyen',
 }
 
 export enum PaymentMethodType {
