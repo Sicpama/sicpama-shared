@@ -56,3 +56,12 @@ export enum RefundState {
   REFUNDED = 'REFUNDED',
   PARTIAL_REFUNDED = 'PARTIAL_REFUNDED',
 }
+
+export enum RefundReasonEnum {
+  NOT_SELECTED = 'notSelected',
+  CANCELED_ORDER = 'canceledOrder',
+  SYSTEM_ERROR = 'systemError',
+  PAYMENT_MISTAKE = 'paymentMistake',
+  FRAUDULENT_CHARGE = 'fraudulentCharge',
+  OTHER = 'other',
+}
