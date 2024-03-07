@@ -18,6 +18,7 @@ export enum PaymentGatewayType {
   AIRWALLEX = 'airwallex',
   ONE_PG = 'one-pg',
   ADYEN = 'adyen',
+  STRIPE = 'stripe',
 }
 
 export enum PaymentMethodType {
