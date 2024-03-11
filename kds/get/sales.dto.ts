@@ -1,4 +1,4 @@
-interface KdsMenuSaleDto {
+export interface KdsMenuSaleDto {
   ranking: number;
   category: string;
   name: string;

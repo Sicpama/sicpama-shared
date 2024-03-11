@@ -1,6 +1,5 @@
+import { KdsAdditionalLanguageDto, KdsPaginationResponse } from '../..';
 import { MenuSellLabel } from '../../enums/labels.enum';
-
-import { KdsAdditionalLanguageDto, KdsPaginationResponse } from './menu.dto';
 
 export interface KdsBaseMenuResDto {
   id: number;
