@@ -1,5 +1,3 @@
-import { MenuSortBy } from '../../enums/menu.enums';
-
 export interface KdsStoreDetailsResDto {
   id: number;
   countryCode: string;
@@ -38,10 +36,4 @@ export interface KdsThermalPrinter {
 export interface KdsStoreResDto extends KdsStoreDetailsResDto {
   attributes: KdsStoreAttributeResDto[];
   receiptPrinters?: KdsThermalPrinter[];
-}
-
-export interface KdsGetMenusQueryDto {
-  name: string;
-  categoryId: number;
-  sortBy: MenuSortBy;
 }

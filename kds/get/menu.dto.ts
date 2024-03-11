@@ -1,11 +1,15 @@
-import { KdsCategoryDomain, Nullable } from '../..';
-
-export interface KdsPaginationResponse {
-  total: number;
-  page: number;
-  pageSize: number;
+import {
+  KdsBaseQueryDto,
+  KdsCategoryDomain,
+  KdsPaginationResponse,
+  MenuSortBy,
+  Nullable,
+} from '../..';
+export interface KdsGetMenusQueryDto extends KdsBaseQueryDto {
+  name: string;
+  categoryId: number;
+  sortBy: MenuSortBy;
 }
-
 export interface KdsAdditionalLanguageDto {
   name: string;
   description: string | null;
@@ -40,7 +44,7 @@ export interface KdsMenuParams {
   menuOptions: KdsMenuOptionDomain[];
 }
 
-export interface IOptionalMenuParams {
+export interface KdsOptionalMenuParams {
   description?: string;
   discountPrice?: Nullable<number>;
   discountDays?: Nullable<string>;
