@@ -21,3 +21,4 @@ export * from './kds/get/store-order.dto';
 export * from './kds/get/store-tables.dto';
 export * from './kds/get/store.dto';
 export * from './kds/get/transaction.dto';
+export * from './diner/put/set-order-status.dto';
