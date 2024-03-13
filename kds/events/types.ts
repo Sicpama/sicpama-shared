@@ -1,11 +1,8 @@
-import { OrderItemStatus, OrderStatus } from '../../';
-
-export type KdsEvent<T> = {
+export interface KdsEvent<T> {
   storeId: number;
-  storeTableId: number;
   eventName: KDS_EVENT;
   data: T;
-};
+}
 
 export enum KDS_EVENT {
   JOIN_TABLE,
@@ -17,62 +14,22 @@ export enum KDS_EVENT {
   TABLE_PAID,
   PRINT_ORDERS,
 }
-
-export type JoinTableKdsData = {
-  orderId: string;
-};
-export type KickKdsData = {
-  orderId: string;
-};
-
-export type ClearTableKdsData = {
-  tableId: number;
-};
-
-export type OrderUpdateKdsData = {
-  orderId: string;
-  orderStatus: OrderStatus;
-};
-
-export type ItemUpdateKdsData = {
-  orderItemId: string;
-  orderItemStatus: OrderItemStatus;
-};
-
-export type BulkItemsUpdateKdsData = {
-  orderItemIds: string[];
-  orderItemStatus: OrderItemStatus;
-};
-
-export type TablePaidKdsData = {
-  ordersPaid: OrderPaid[];
-};
-
-export type OrderPaid = {
+export interface OrderPaid {
   orderId: string;
   paid: string;
-};
-
-export class PrintOrdersKdsData {
-  order?: PrintOrder;
-  receiptPrinters: ReceiptPrinter[] = [];
-  customerPhoneNumber = 'missing';
 }
-
-export class PrintOrderItem {
-  menuName = 'missing';
-  quantity = 1;
+export interface PrintOrderItem {
+  menuName: string;
+  quantity: number;
 }
-
-export class PrintOrder {
-  orderNumber = 'missing';
-  tableNumber = 'missing';
-  printedAt = 'missing';
-  orderItems: PrintOrderItem[] = [];
+export interface PrintOrder {
+  orderNumber: string;
+  tableNumber: string;
+  printedAt: string;
+  orderItems: PrintOrderItem[];
 }
-
-export class ReceiptPrinter {
-  id = 'missing';
-  vendorId?: number;
-  repeatPrintingCounter = 1;
+export interface ReceiptPrinter {
+  id: string;
+  vendorId: number;
+  repeatPrintingCounter: number;
 }

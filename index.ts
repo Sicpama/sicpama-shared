@@ -9,6 +9,7 @@ export * from './enums/sns-provider.enum';
 export * from './enums/status.enum';
 export * from './enums/store.enum';
 export * from './enums/transaction.enum';
+export * from './kds/events/data';
 export * from './kds/events/types';
 export * from './kds/get/base.dto';
 export * from './kds/get/category.dto';
