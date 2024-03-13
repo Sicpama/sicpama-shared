@@ -1,44 +1,39 @@
 import { OrderItemStatus, OrderPaid, OrderStatus, PrintOrder, ReceiptPrinter } from '../..';
 
-export interface JoinTableKdsData {
+export interface BaseKdsData {
   storeTableId: number;
+}
+
+export interface JoinTableKdsData extends BaseKdsData {
   orderId: string;
 }
 
-export interface KickKdsData {
-  storeTableId: number;
+export interface KickKdsData extends BaseKdsData {
   orderId: string;
 }
 
-export interface ClearTableKdsData {
-  storeTableId: number;
-}
+export type ClearTableKdsData = BaseKdsData;
 
-export interface OrderUpdateKdsData {
-  storeTableId: number;
+export interface OrderUpdateKdsData extends BaseKdsData {
   orderId: string;
   orderStatus: OrderStatus;
 }
 
-export interface ItemUpdateKdsData {
-  storeTableId: number;
+export interface ItemUpdateKdsData extends BaseKdsData {
   orderItemId: string;
   orderItemStatus: OrderItemStatus;
 }
 
-export interface BulkItemsUpdateKdsData {
-  storeTableId: number;
+export interface BulkItemsUpdateKdsData extends BaseKdsData {
   orderItemIds: string[];
   orderItemStatus: OrderItemStatus;
 }
 
-export interface TablePaidKdsData {
-  storeTableId: number;
+export interface TablePaidKdsData extends BaseKdsData {
   ordersPaid: OrderPaid[];
 }
 
-export interface PrintOrdersKdsData {
-  storeTableId: number;
+export interface PrintOrdersKdsData extends BaseKdsData {
   order?: PrintOrder;
   receiptPrinters: ReceiptPrinter[];
   customerPhoneNumber: string;
