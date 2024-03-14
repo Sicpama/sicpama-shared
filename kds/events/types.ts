@@ -1,5 +1,4 @@
 export interface KdsEvent<T> {
-  storeId: number;
   eventName: KDS_EVENT;
   data: T;
 }
