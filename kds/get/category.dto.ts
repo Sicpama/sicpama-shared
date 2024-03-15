@@ -5,3 +5,9 @@ export interface KdsCategoryDomain {
   description: string;
   priority: number;
 }
+
+export interface KdsListCategoryQueryDto {
+  pageNumber: number;
+  pageSize: number;
+  name?: string;
+}
