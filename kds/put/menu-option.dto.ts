@@ -1,15 +1,12 @@
-import { Nullable } from '../../types/nullable.type';
-
 export interface KdsCreateMenuOptionChoiceDto {
   name: string;
-  description: Nullable<string>;
+  description?: string;
   price: number;
 }
 
 export interface KdsCreateMenuOptionDto {
   name: string;
-  description: Nullable<string>;
-  isMultipleChoice: boolean;
+  description?: string;
   minChoices: number;
   maxChoices: number;
   required: boolean;
