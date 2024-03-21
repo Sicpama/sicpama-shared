@@ -5,6 +5,9 @@ import {
   MenuSortBy,
   Nullable,
 } from '../..';
+
+import { KdsInventoryDomain } from './inventory.dto';
+
 export interface KdsGetMenusQueryDto extends KdsBaseQueryDto {
   name: string;
   categoryId: number;
@@ -34,6 +37,7 @@ export interface KdsMenuDomain {
   category: KdsCategoryDomain;
   minOrderQuantity: number;
   menuOptions: KdsMenuOptionDomain[];
+  inventory: KdsInventoryDomain[];
 }
 
 export interface KdsMenuParams {
