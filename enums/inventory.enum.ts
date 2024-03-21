@@ -1,5 +1,6 @@
 export enum InventoryTransactionReason {
-  ORDER_FULFILLMENT = 'order fulfillment',
-  RESTOCKING = 'restocking',
-  ADJUSTMENT = 'adjustment',
+  ORDER_FULFILLMENT,
+  RESTOCKING,
+  ADJUSTMENT,
+  STOCK_TAKE,
 }
