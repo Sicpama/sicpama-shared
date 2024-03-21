@@ -15,6 +15,7 @@ export * from './kds/get/base.dto';
 export * from './kds/get/category.dto';
 export * from './kds/get/category.legacy.dto';
 export * from './kds/get/coupon.dto';
+export * from './kds/get/login.dto';
 export * from './kds/get/menu.dto';
 export * from './kds/get/menu.legacy.dto';
 export * from './kds/get/order.dto';
