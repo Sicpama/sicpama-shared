@@ -1,4 +1,5 @@
 export * from './enums/bank.enum';
+export * from './enums/external-order.enum';
 export * from './enums/gender.enum';
 export * from './enums/labels.enum';
 export * from './enums/menu.enum';
@@ -30,5 +31,9 @@ export * from './kds/put/kick-diner.dto';
 export * from './kds/put/orderitem.dto';
 export * from './kds/put/paid-cash.dto';
 export * from './kds/request/refund.dto';
+export * from './pos/category.dto';
+export * from './pos/menu.dto';
+export * from './pos/store.dto';
+export * from './pos/store-table.dto';
 export * from './types/coupon.type';
 export * from './types/nullable.type';
