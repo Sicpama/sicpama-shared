@@ -13,6 +13,7 @@ export interface KdsGetMenusQueryDto extends KdsBaseQueryDto {
   categoryId: number;
   sortBy: MenuSortBy;
 }
+
 export interface KdsAdditionalLanguageDto {
   name: string;
   description: string | null;
@@ -37,7 +38,7 @@ export interface KdsMenuDomain {
   category: KdsCategoryDomain;
   minOrderQuantity: number;
   menuOptions: KdsMenuOptionDomain[];
-  inventory: KdsInventoryDomain[];
+  inventories: KdsInventoryDomain[];
 }
 
 export interface KdsMenuParams {
