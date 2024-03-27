@@ -30,6 +30,7 @@ export * from './kds/put/clear-table.dto';
 export * from './kds/put/kick-diner.dto';
 export * from './kds/put/orderitem.dto';
 export * from './kds/put/paid-cash.dto';
+export * from './kds/put/pickup.payload.dto';
 export * from './kds/request/refund.dto';
 export * from './pos/category.dto';
 export * from './pos/menu.dto';
