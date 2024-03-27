@@ -1,3 +1,5 @@
+import { OkPosMenuData } from './okpos/menu';
+
 export class MenuPosData {
   raptor?: RaptorMenuData;
   okpos?: OkPosMenuData;
@@ -12,11 +14,6 @@ export interface RaptorMenuData {
   groupno?: string;
   groupname?: string;
 }
-
-export interface OkPosMenuData {
-  CODE: string;
-}
-
 export class MenuOptionChoicePosData {
   raptor?: RaptorMenuOptionChoiceData;
   // Currently no optiomns for okpos

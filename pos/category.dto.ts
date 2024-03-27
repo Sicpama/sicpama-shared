@@ -1,6 +1,8 @@
+import { OkPosCategory } from '..';
+
 export interface CategoryPosData {
   raptor?: RaptorCategoryData;
-  // Currently no okpos categories
+  okpos?: OkPosCategory;
 }
 
 export interface RaptorCategoryData {
