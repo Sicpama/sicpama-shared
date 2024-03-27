@@ -8,7 +8,7 @@ export interface KdsInventoryMenuAndMenuQuantities {
 export interface KdsInventoryDomain {
   id: number;
   name: string;
-  currentQuantity: number;
+  quantity: number;
   storeId: number;
   menuAndMenuQuantities: KdsInventoryMenuAndMenuQuantities[];
 }

@@ -1,26 +1,25 @@
-import { InventoryTransactionReason } from '../../enums/inventory.enum';
-
-export interface KdsPostMenuAndMenuQuantitiesDto {
+export interface KdsMenuAndRequiredQuantitiesDto {
   menuId: number;
   requiredQuantity: number;
 }
 
-export interface KdsPutMenuAndMenuQuantitiesDto extends KdsPostMenuAndMenuQuantitiesDto {
+export interface KdsInventoryDto {
+  inventoryName: string;
+  storeId: number;
+  menuAndMenuQuantities: KdsMenuAndRequiredQuantitiesDto[];
+}
+
+export interface KdsPostInventoryDto extends KdsInventoryDto {
+  setQuantity: number; // setQuantity, used for stock take
+}
+
+export interface KdsPutMenuToInventoryItemDto extends KdsMenuAndRequiredQuantitiesDto {
   id: number;
 }
 
-export interface KdsPostInventoryDto {
-  inventoryName: string;
-  storeId: number;
-  currentQuantity: number;
-  menuAndMenuQuantities: KdsPostMenuAndMenuQuantitiesDto[];
-}
-
-export interface KdsPutInventoryDto {
+export interface KdsPutInventoryDto extends KdsInventoryDto {
   id: number;
-  inventoryName: string;
-  currentQuantity?: number;
-  quantityChange?: number;
-  reason: InventoryTransactionReason;
-  storeId: number;
+  setQuantity?: number; // setQuantity, used for stock take
+  updateQuantity?: number; // updateQuantity, used for restocking and adjustment
+  menuAndMenuQuantities: KdsPutMenuToInventoryItemDto[];
 }
