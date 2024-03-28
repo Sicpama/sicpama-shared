@@ -1,6 +1,6 @@
 export interface KdsMenuAndRequiredQuantitiesDto {
   menuId: number;
-  requiredQuantity: number;
+  menuQuantityRequired: number;
 }
 
 export interface KdsInventoryDto {
@@ -14,7 +14,7 @@ export interface KdsPostInventoryDto extends KdsInventoryDto {
 }
 
 export interface KdsPutMenuToInventoryItemDto extends KdsMenuAndRequiredQuantitiesDto {
-  id: number;
+  id?: number;
 }
 
 export interface KdsPutInventoryDto extends KdsInventoryDto {
