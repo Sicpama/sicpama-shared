@@ -5,12 +5,12 @@ export class MenuPosData {
 
 export interface RaptorMenuData {
   pluno: string;
-  desc1: string;
-  desc2: string;
   itemtype: string;
-  openitem: boolean;
-  groupno: string;
-  groupname: string;
+  openitem?: boolean;
+  desc1?: string;
+  desc2?: string;
+  groupno?: string;
+  groupname?: string;
 }
 
 export interface OkPosMenuData {
@@ -24,7 +24,8 @@ export class MenuOptionChoicePosData {
 
 export type RaptorMenuOptionChoiceData = {
   pluno: string;
-  desc1: string;
-  desc2: string;
   itemtype: string;
+  openitem?: boolean;
+  desc1?: string;
+  desc2?: string;
 };

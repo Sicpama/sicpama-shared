@@ -4,10 +4,10 @@ export interface PosTableData {
 }
 
 export interface RaptorTableData {
-  operatorno?: number;
   salesno: number;
   splitno: number;
   rcptno?: string;
+  operatorno?: number;
 }
 
 export interface OkPosTableData {
