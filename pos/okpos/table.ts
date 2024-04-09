@@ -12,4 +12,5 @@ export interface OkPosTable {
 }
 export interface OkPosSicpamaTable extends OkPosTable {
   id: number;
+  tableNumber: string;
 }
