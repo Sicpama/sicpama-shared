@@ -10,3 +10,7 @@ export interface OkPosTable {
   INS_DT: string;
   UPD_DT: string;
 }
+
+export interface TableCodes {
+  tableCodes: string[];
+}
