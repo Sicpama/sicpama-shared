@@ -1,7 +1,9 @@
 import { PaymentGatewayType } from '../../enums/payment.enum';
 import { OrderItemStatus } from '../../enums/status.enum';
 
+import { KdsPaginationResponse } from './base.dto';
 import { KdsBaseMenuSnapshotResDto } from './menu.legacy.dto';
+import { KdsStoreTableOrderResult } from './store-order.dto';
 
 export interface KdsPayment {
   customerId: string;
@@ -31,4 +33,8 @@ export interface KdsOrderItem {
   menuSnapshot: KdsBaseMenuSnapshotResDto;
   isMenuShareable: boolean;
   status: OrderItemStatus;
+}
+
+export interface KdsOrderList extends KdsPaginationResponse {
+  data: KdsStoreTableOrderResult[];
 }
