@@ -13,17 +13,22 @@ export interface OkPosStore {
   DOUBLE_PORTION_FLAG: string;
   KITCHEN_FLOOR_TAG: string;
   KITCHEN_FLOOR_INFO: KitchenFloorInfo[];
-  SHOP_CORNER_INFO: string;
+  SERVICE_TIP_FLAG: string;
+  SERVICE_TIP_RATE: string;
+  SHOP_CORNER_INFO: ShopCornerInfo[];
   SHOP_CORNER_TYPE: string;
   TAX_INCLUDED_FLAG: string;
   TIP_INCLUDED_FLAG: string;
-  EXTERNAL_KEY?: string;
-  EXTERNAL_SERVICE?: string;
 }
-
 export interface KitchenFloorInfo {
-  SERVICE_TIP_FLAG: string;
-  SERVICE_TIP_RATE: string;
+  FLOOR_NO: string;
+  USE_YN: string;
+}
+export interface ShopCornerInfo {
+  BIZ_NO: string;
+  CORNER_CD: string;
+  CORNER_NM: string;
+  USE_YN: string;
 }
 export interface OkPosSicpamaStore extends OkPosStore {
   id: number;
