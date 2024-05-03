@@ -1,14 +1,20 @@
+import {
+  OkPosOrderChangeData,
+  OkPosReturnAllData,
+  OkPosSaleAllData,
+  OkPosSaleCancelData,
+  OkPosSalePartialData,
+  OkPosTableMoveData,
+} from '../../';
 export interface OrderInfoCmdReqData {
   TABLE_CD?: string;
   EXTERNAL_ORDER_NO?: string;
   EXTERNAL_ORDER_SEQ?: string;
 }
-
 export interface ApprInfo {
   APPR_DC_NO: string; // Linked payment number (issued by partners)
   APPR_DC_DATE: string; // payment date
 }
-
 export interface CardInfo {
   APPR_DC_NO: string;
   APPR_DC_DATE: string;
@@ -32,7 +38,6 @@ export interface CardInfo {
   PAY_TYPE: string;
   VAN_CD: string;
 }
-
 export interface EasyPayInfo {
   APPR_DC_NO: string;
   APPR_DC_DATE: string;
@@ -55,7 +60,6 @@ export interface EasyPayInfo {
   PAY_TYPE: string;
   VAN_CD: string;
 }
-
 export interface CashInfo {
   APPR_DC_NO: string; // 연동 결제번호 (제휴사에서 발행 (Integrated payment number (issued by the partner company))
   APPR_DC_DATE: string; // 연동 결제일자(yyyyMMdd) (Payment date)
@@ -72,7 +76,6 @@ export interface CashInfo {
   PAY_TYPE: string; // 결제구분 (Y : 결제승인, N : 승인취소) (Payment division (Y: payment approval, N: approval cancellation))
   VAN_CD: string; //
 }
-
 export interface OrderInfo {
   ORDER_TYPE: string; // Y = order / N = cancel
   PROD_CD: string; // menu code
@@ -95,7 +98,6 @@ export interface OrderInfo {
   SDS_ORG_DTL_NO?: string; // SDS_ORG_DTL_NO (side menu source number)
   APPR_INFO?: ApprInfo[]; // payment info
 }
-
 export interface OrderRequestCmdReqData {
   TABLE_CD: string;
   EXTERNAL_ORDER_NO: string;
@@ -109,4 +111,13 @@ export interface OrderRequestCmdReqData {
   CARD_INFO?: CardInfo[];
   EASYPAY_INFO?: EasyPayInfo[];
   CASH_INFO?: CashInfo[];
+}
+export interface OrderData {
+  requests: OrderRequestCmdReqData[];
+  salePartials: OkPosSalePartialData[];
+  saleAll: OkPosSaleAllData;
+  orderChanges: OkPosOrderChangeData[];
+  saleCancel: OkPosSaleCancelData;
+  returnAll: OkPosReturnAllData;
+  tableMove: OkPosTableMoveData;
 }
