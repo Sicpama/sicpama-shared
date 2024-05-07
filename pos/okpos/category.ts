@@ -1,7 +1,7 @@
 export interface OkPosCategory {
-  large?: OkPosClsLmCode;
-  medium?: OkPosClsMmCode;
-  small?: OkPosClsSmCode;
+  CLSLMCODE?: OkPosClsLmCode;
+  CLSMMCODE?: OkPosClsMmCode;
+  CLSSMCODE?: OkPosClsSmCode;
 }
 // Large category
 export interface OkPosClsLmCode {
