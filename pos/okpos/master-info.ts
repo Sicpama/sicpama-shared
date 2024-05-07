@@ -24,8 +24,7 @@ export interface OkPosMasterInfo {
   PRODS?: OkPosMenuData[];
 }
 
-export interface OkPosMasterInfoResponseDto {
-  target: string;
-  inserts: number;
-  updates: number;
+export interface OkPosMasterInfoResponseDto<T> {
+  inserted?: T[];
+  updated?: T[];
 }
