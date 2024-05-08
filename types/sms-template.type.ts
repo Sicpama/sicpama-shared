@@ -6,4 +6,5 @@ export enum TemplateType {
 export enum MessageType {
   PICK_UP = 'PICK_UP',
   E_RECEIPT = 'E_RECEIPT',
+  E_RECEIPT_QUEUE = 'E_RECEIPT_QUEUE',
 }
