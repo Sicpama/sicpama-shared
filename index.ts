@@ -47,3 +47,4 @@ export * from './pos/store.dto';
 export * from './pos/store-table.dto';
 export * from './types/coupon.type';
 export * from './types/nullable.type';
+export * from './diner/events/types';
