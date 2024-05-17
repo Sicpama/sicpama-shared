@@ -15,18 +15,10 @@ export interface KdsStoreDetailsResDto {
   vendorIds: string[] | null;
 }
 
-export interface KdsStoreAttributeValueResDto {
-  id: number;
-  storeAttributeId: number;
-  value: string;
-  parentId: string | null;
-  priority: number | null;
-}
-
 export interface KdsStoreAttributeResDto {
   id: number;
   name: string;
-  values: KdsStoreAttributeValueResDto[];
+  value: string;
 }
 
 export interface KdsThermalPrinter {
