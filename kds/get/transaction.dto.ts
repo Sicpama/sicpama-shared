@@ -1,4 +1,6 @@
-import { RefundState, RefundStatus } from '../../enums/payment.enum';
+import { PaymentOption, RefundState, RefundStatus } from '../../enums/payment.enum';
+
+import { KdsPaginationResponse } from './base.dto';
 
 export interface KdsTransactionCustomerInfo {
   id: string;
@@ -70,6 +72,21 @@ export interface KdsTransactionDetailDomain {
   totalRefunded: number;
   refundState: RefundState;
   numberOfCustomer: number;
+}
+
+export interface KdsTransactionListItemDomain {
+  id: string;
+  totalOrder: number;
+  totalPaid: number;
+  paymentOptions: PaymentOption[];
+  totalRefunded: number;
+  title: string;
+  tableNumber: string;
+  date: string;
+}
+
+export interface KdsTransactionListDto extends KdsPaginationResponse {
+  data: KdsTransactionListItemDomain[];
 }
 
 // Assuming RefundStatus and RefundState are enums or types defined elsewhere
