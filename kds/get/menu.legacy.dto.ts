@@ -33,7 +33,6 @@ export interface KdsBaseMenuOptionResDto {
   id: number;
   name: string;
   description: string | null;
-  isMultipleChoice: boolean;
   required: boolean;
   choices: KdsBaseMenuOptionChoiceResDto[];
   additionalLanguages?: KdsAdditionalLanguageDto[];
