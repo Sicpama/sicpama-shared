@@ -1,7 +1,10 @@
+import { OkPosTuClsCode } from '../..';
+
 export interface OkPosCategory {
   CLSLMCODE?: OkPosClsLmCode;
   CLSMMCODE?: OkPosClsMmCode;
   CLSSMCODE?: OkPosClsSmCode;
+  TUCLSCODE?: OkPosTuClsCode;
 }
 // Large category
 export interface OkPosClsLmCode {
