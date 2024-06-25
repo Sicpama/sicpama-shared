@@ -2,13 +2,16 @@ import {
   OkPosClsLmCode,
   OkPosClsMmCode,
   OkPosClsSmCode,
-  OkPosMenuData,
+  OkPosProdData,
   OkPosSdaCdCode,
   OkPosSdaClCode,
   OkPosSdsCdCode,
   OkPosSdsClCode,
   OkPosSdsGrpCode,
   OkPosTable,
+  OkPosTuClsCode,
+  OkPosTuKeyCode,
+  OkPosTuKeyWithProdCode,
 } from '../..';
 
 export interface OkPosMasterInfo {
@@ -21,7 +24,10 @@ export interface OkPosMasterInfo {
   CLSLMCODE?: OkPosClsLmCode[];
   CLSMMCODE?: OkPosClsMmCode[];
   CLSSMCODE?: OkPosClsSmCode[];
-  PRODS?: OkPosMenuData[];
+  PRODS?: OkPosProdData[];
+  TUCLSCODE?: OkPosTuClsCode[];
+  TUKEYCODE?: OkPosTuKeyCode[];
+  TUKEYCODE_WITH_PROD?: OkPosTuKeyWithProdCode[];
 }
 
 export interface OkPosMasterInfoResponseDto<T> {

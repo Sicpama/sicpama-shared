@@ -36,6 +36,7 @@ export * from './pos/category.dto';
 export * from './pos/menu.dto';
 export * from './pos/okpos/callbacks';
 export * from './pos/okpos/category';
+export * from './pos/okpos/keycode';
 export * from './pos/okpos/events/data';
 export * from './pos/okpos/events/types';
 export * from './pos/okpos/master-info';
