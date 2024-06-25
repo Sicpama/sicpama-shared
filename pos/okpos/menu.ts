@@ -2,7 +2,6 @@ export interface OkPosMenuData {
   PROD_CD: string;
   PROD_NM: string;
   LCLS_CD: string;
-  LCLS_NM: string;
   MCLS_CD: string;
   SCLS_CD: string;
   SALE_UPRC: string;
