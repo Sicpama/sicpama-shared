@@ -40,4 +40,5 @@ export enum STORE_ATTRIBUTE_NAME {
   DATA_REPORT_URL = 'dataReportUrl',
   SINGLE_CLICK = 'singleClick',
   IS_INVENTORY_ENABLED = 'isInventoryEnabled',
+  PAYMENT_ENVIRONMENT = 'paymentEnvironment',
 }
