@@ -9,6 +9,5 @@ export interface KdsCreateMenuOptionDto {
   description?: string;
   minChoices: number;
   maxChoices: number;
-  required: boolean;
   menuOptionChoices: KdsCreateMenuOptionChoiceDto[];
 }

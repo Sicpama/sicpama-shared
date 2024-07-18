@@ -64,7 +64,6 @@ export interface KdsMenuOptionDomain {
   id: number;
   name: string;
   description: string;
-  required: boolean;
   minChoices: number;
   maxChoices: number;
   menuOptionChoices: KdsMenuOptionChoiceDomain[];
