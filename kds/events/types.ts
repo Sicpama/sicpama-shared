@@ -31,4 +31,5 @@ export interface ReceiptPrinter {
   id: string;
   vendorId: number;
   repeatPrintingCounter: number;
+  characterSet?: string;
 }
