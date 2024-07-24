@@ -1,3 +1,5 @@
+import { ReceiptPrinter } from '../..';
+
 export interface KdsStoreDetailsResDto {
   id: number;
   countryCode: string;
@@ -21,11 +23,7 @@ export interface KdsStoreAttributeResDto {
   value: string;
 }
 
-export interface KdsThermalPrinter {
-  vendorId: number;
-}
-
 export interface KdsStoreResDto extends KdsStoreDetailsResDto {
   attributes: KdsStoreAttributeResDto[];
-  receiptPrinters?: KdsThermalPrinter[];
+  receiptPrinters?: ReceiptPrinter[];
 }

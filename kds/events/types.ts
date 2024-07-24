@@ -1,3 +1,5 @@
+import { Nullable } from '../..';
+
 export interface KdsEvent<T> {
   eventName: KDS_EVENT;
   data: T;
@@ -32,4 +34,5 @@ export interface ReceiptPrinter {
   vendorId: number;
   repeatPrintingCounter: number;
   characterSet?: string;
+  ipAddress: Nullable<string>;
 }
