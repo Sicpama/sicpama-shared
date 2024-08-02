@@ -1,14 +1,16 @@
+import { Nullable } from '../../../../types';
+
 export interface KdsCreateMenuDto {
   name: string;
   description?: string;
   categoryId: number;
   storeId: number;
   price: number;
-  discountPrice?: number;
+  discountPrice?: Nullable<number>;
   discountDays?: string;
   photo?: string;
   isAvailable: boolean;
-  priority: number;
+  priority?: Nullable<number>;
   minOrderQuantity: number;
   menuOptionIds: number[];
   additionalLanguageIds: number[];
