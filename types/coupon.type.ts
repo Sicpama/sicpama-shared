@@ -56,6 +56,7 @@ export type MenuItem = {
 export enum ADVERT_LOCATION {
   LOGIN_PAGE = 'LOGIN_PAGE',
   USABLE_COUPON_LIST = 'USABLE_COUPON_LIST',
+  MARKETING = 'MARKETING',
 }
 
 export enum ADVERT_LANGUAGE {
