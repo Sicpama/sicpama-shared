@@ -41,4 +41,5 @@ export enum STORE_ATTRIBUTE_NAME {
   SINGLE_CLICK = 'singleClick',
   IS_INVENTORY_ENABLED = 'isInventoryEnabled',
   PAYMENT_GATEWAY_MODE = 'paymentGatewayMode', // test || live
+  MARKETING_POPUP_ENABLED = 'marketingPopupEnabled',
 }
