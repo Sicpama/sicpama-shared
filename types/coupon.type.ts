@@ -34,10 +34,14 @@ export type Rule = {
 };
 
 export type StampCondition = {
-  // Can restrict items that count
+  // Can restrict items that count by list of menuItems
   menuItems?: MenuItem[];
+  // Can restrict items that count by category ids
+  categoryIds?: number[];
   // Can have minimum purchase amount to count
   minValue?: number;
+  // Can have accumulated spend to gain stamp
+  accumulatedValue?: number;
   // Target stamp count to use the coupon and get rewards
   count: number;
 };
