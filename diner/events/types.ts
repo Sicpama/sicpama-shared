@@ -1,9 +1,9 @@
 import { PaymentOption } from '../../enums/payment.enum';
 
-export type DinerEvent<T> = {
+export interface DinerEvent<T> {
   eventName: DINER_EVENT;
   data: T;
-};
+}
 
 export enum DINER_EVENT {
   CLEAR_TABLE = 'clear-table',
@@ -31,78 +31,78 @@ export enum DINER_EVENT {
   START_SPIN_THE_WHEEL = 'start-spin-the-wheel',
 }
 
-export type DinerStartSpinTheWheel = {
+export interface DinerStartSpinTheWheel {
   customerId: string;
   id: string;
   sessionId: string;
   paymentOptionEnum: PaymentOption;
-};
+}
 
-export type DinerBackToTab = {
+export interface DinerBackToTab {
   text: 'back-to-tab';
-};
+}
 
-export type DinerReAddOrder = {
+export interface DinerReAddOrder {
   sessionId: string;
   customerId: string;
-};
+}
 
-export type DinerStartPaying = {
+export interface DinerStartPaying {
   orderId: string;
-};
+}
 
-export type DinerCheckout = {
+export interface DinerCheckout {
   text: 'checkout';
-};
+}
 
-export type DinerSetPaymentOption = {
+export interface DinerSetPaymentOption {
   name: string;
   paymentOption: PaymentOption;
-};
+}
 
-export type JoinTableDinerData = {
+export interface JoinTableDinerData {
   id: string;
   nickName: string;
   providerProfilePhoto: string;
   fingerPrint: string;
-};
+}
 
-export type DinerRemoveFromTab = {
+export interface DinerRemoveFromTab {
   customerName: string;
   customerId: string;
   menuName: string;
-};
+}
 
-export type DinerAddToTab = {
+export interface DinerAddToTab {
   customerName: string;
   customerId: string;
   menuName: string;
-};
+}
 
-export type DinerChangeQuantity = {
+export interface DinerChangeQuantity {
   customerName: string;
   customerId: string;
   menuName: string;
-};
+}
 
-export type KickDinerData = {
+export interface KickDinerData {
   orderId: string;
-};
+}
 
-export type ClearTableDinerData = {
+export interface ClearTableDinerData {
   tableId: number;
-};
+}
 
-export type CashPaidDinerData = {
+export interface CashPaidDinerData {
   orderId: string;
   paidAmount: number;
-};
+}
 
-export type PaymentCallbackDinerData = {
+export interface PaymentCallbackDinerData {
   orderId: string;
   resultCode: string;
-};
+}
 
-export type PaymentInProgressDinerData = {
+export interface PaymentInProgressDinerData {
   orderId: string;
-};
+}

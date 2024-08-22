@@ -1,25 +1,25 @@
-export type ItemBasedRecommendMenuUnit = {
+export interface ItemBasedRecommendMenuUnit {
   precedentMenuIds: number[];
   subsequentMenuIds: number[];
-};
+}
 
-export type ItemBasedRecommendMenuStructure = {
+export interface ItemBasedRecommendMenuStructure {
   sequence: number;
   defaultMenuIds: number[];
   recommends: ItemBasedRecommendMenuUnit[];
-};
+}
 
-export type UserBasedRecommendMenuUnit = {
+export interface UserBasedRecommendMenuUnit {
   menuId: number;
   probability: number;
-};
+}
 
-export type UserBasedRecommendMenuStructure = {
+export interface UserBasedRecommendMenuStructure {
   totalUserNumber: number;
   recommendMenus: UserBasedRecommendMenuUnit[];
-};
+}
 
-export type UpdateItemBasedRecommendMenuRequest = {
+export interface UpdateItemBasedRecommendMenuRequest {
   menuId: number;
   data: ItemBasedRecommendMenuStructure[];
-};
+}

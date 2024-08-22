@@ -19,10 +19,10 @@ export class MenuOptionChoicePosData {
   // Currently no optiomns for okpos
 }
 
-export type RaptorMenuOptionChoiceData = {
+export interface RaptorMenuOptionChoiceData {
   pluno: string;
   itemtype: string;
   openitem?: boolean;
   desc1?: string;
   desc2?: string;
-};
+}

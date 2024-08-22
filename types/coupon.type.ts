@@ -1,39 +1,37 @@
-export type Rewards = {
-  menuRewards?: MenuRewards;
+export interface Rewards {
+  menuRewards?: MenuReward[];
   discountPercent?: number;
   discountPercentPerCompanionLogin?: number;
   discountMoney?: number;
   discountMoneyPerCompanionLogin?: number;
   discountMaxPercent?: number;
   discountMaxMoney?: number;
-};
+}
 
-export type MenuRewards = MenuReward[];
-
-export type MenuReward = {
+export interface MenuReward {
   menuItems: MenuItem[];
   discountPercent: number;
-};
+}
 
-export type Criteria = {
+export interface Criteria {
   // Is the couponUsage record manually created?
   isManuallyCreated?: boolean;
   // Restrict customers that the coupon applies to
   customer?: Rule[];
   // What conditions have to be met to use the coupon
   canUse?: Rule[];
-};
+}
 
-export type Rule = {
+export interface Rule {
   previousVisits?: Condition;
   companionLogins?: Condition;
   menuItems?: MenuItem[];
   stamps?: StampCondition;
   category?: number[];
   amount?: number;
-};
+}
 
-export type StampCondition = {
+export interface StampCondition {
   // Can restrict items that count by list of menuItems
   menuItems?: MenuItem[];
   // Can restrict items that count by category ids
@@ -44,18 +42,18 @@ export type StampCondition = {
   accumulatedValue?: number;
   // Target stamp count to use the coupon and get rewards
   count: number;
-};
+}
 
-export type Condition = {
+export interface Condition {
   greaterThan?: number;
   equalTo?: number;
-};
+}
 
-export type MenuItem = {
+export interface MenuItem {
   menuId: number;
   mocKey?: string;
   menuQuantity?: number;
-};
+}
 
 export enum ADVERT_LOCATION {
   LOGIN_PAGE = 'LOGIN_PAGE',
@@ -68,11 +66,11 @@ export enum ADVERT_LANGUAGE {
   EN = 'en',
 }
 
-export type Advert = {
+export interface Advert {
   location: {
     [key in ADVERT_LOCATION]?: Record<ADVERT_LANGUAGE, string>;
   };
-};
+}
 
 export enum CouponType {
   SICPAMA_COUPON = 'sicpama_coupon',
