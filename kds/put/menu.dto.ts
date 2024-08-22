@@ -1,4 +1,4 @@
-import { Nullable } from '../../../../types';
+import { Nullable } from '../..';
 
 export interface KdsCreateMenuDto {
   name: string;
