@@ -11,13 +11,6 @@ export enum OkPosCallback {
   TABLE_MOVE = '/callback/table_change/move',
   SOLD_OUT = '/callback/sold_out/change',
 }
-export interface OkPosSaleAllData {
-  POS_NO: string;
-  BILL_NO: string;
-  PAY_AMT: string;
-  TABLE_CD: string;
-  EXTERNAL_ORDER_NO: string;
-}
 export interface OkPosSalePartialData {
   TABLE_CD: string;
   EXTERNAL_ORDER_NO: string;
