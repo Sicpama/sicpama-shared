@@ -1,3 +1,31 @@
+import { ICustomer, IOrder, IStore, Nullable } from '..';
+
+export interface ICoupon {
+  id: string;
+  code: string;
+  name: Nullable<string>;
+  couponType: CouponType;
+  storeId: Nullable<number>;
+  store: IStore;
+  totalQuantity: Nullable<number>;
+  quantityPerUser: Nullable<number>;
+  startsAt: Nullable<Date>;
+  expiresAt: Nullable<Date>;
+  rewards: Rewards;
+  criteria: Criteria;
+  advert: Nullable<Advert>;
+}
+export interface ICouponUsage {
+  id: string;
+  couponId: string;
+  coupon: ICoupon;
+  customerId: string;
+  customer: ICustomer;
+  orderId?: Nullable<string>;
+  order?: Nullable<IOrder>;
+  usedAt?: Nullable<Date>;
+}
+
 export interface Rewards {
   menuRewards?: MenuReward[];
   discountPercent?: number;
@@ -68,7 +96,7 @@ export enum ADVERT_LANGUAGE {
 
 export interface Advert {
   location: {
-    [key in ADVERT_LOCATION]?: Record<ADVERT_LANGUAGE, string>;
+    [key in ADVERT_LOCATION]?: Record<string, string>;
   };
 }
 

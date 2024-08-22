@@ -1,6 +1,6 @@
-import { KdsPaginationResponse } from './base.dto';
+import { IBaseQueryDto, InventorySortBy, IPaginationResponse } from '../../';
 
-export interface KdsInventoryDomainDto extends KdsPaginationResponse {
+export interface KdsInventoryDomainDto extends IPaginationResponse {
   data: KdsInventoryDomain[];
 }
 
@@ -39,4 +39,9 @@ export interface KdsInventoryMenuAndMenuQuantities {
   menuId: number;
   menuName: string;
   menuQuantityRequired: number;
+}
+
+export interface KdsGetInventoryQueryDto extends IBaseQueryDto {
+  name: string;
+  sortBy: InventorySortBy;
 }

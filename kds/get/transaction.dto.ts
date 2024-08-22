@@ -1,6 +1,5 @@
+import { IPaginationResponse } from '../../../../submodules/sicpama-shared';
 import { PaymentOption, RefundState, RefundStatus } from '../../enums/payment.enum';
-
-import { KdsPaginationResponse } from './base.dto';
 
 export interface KdsTransactionCustomerInfo {
   id: string;
@@ -85,7 +84,7 @@ export interface KdsTransactionListItemDomain {
   date: string;
 }
 
-export interface KdsTransactionListDto extends KdsPaginationResponse {
+export interface KdsTransactionListDto extends IPaginationResponse {
   data: KdsTransactionListItemDomain[];
 }
 

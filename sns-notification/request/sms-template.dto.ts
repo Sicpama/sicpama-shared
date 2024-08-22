@@ -1,5 +1,5 @@
+import { MessageType, TemplateType } from '../..';
 import { SnsNotificationProviderEnum } from '../../enums/sns-provider.enum';
-import { MessageType, TemplateType } from '../../types/sms-template.type';
 
 export interface RegisterSmsTemplateRequestDto {
   providerName: SnsNotificationProviderEnum;

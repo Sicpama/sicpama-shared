@@ -1,8 +1,7 @@
-import { KdsAdditionalLanguageDto, MenuSellLabel } from '../..';
+import { IPaginationResponse, KdsAdditionalLanguageDto, MenuSellLabel } from '../..';
 import { PaymentGatewayType } from '../../enums/payment.enum';
 import { OrderItemStatus } from '../../enums/status.enum';
 
-import { KdsPaginationResponse } from './base.dto';
 import { KdsStoreTableOrderResult } from './store-order.dto';
 
 export interface KdsBaseMenuResDto {
@@ -76,6 +75,6 @@ export interface KdsOrderItem {
   status: OrderItemStatus;
 }
 
-export interface KdsOrderList extends KdsPaginationResponse {
+export interface KdsOrderList extends IPaginationResponse {
   data: KdsStoreTableOrderResult[];
 }

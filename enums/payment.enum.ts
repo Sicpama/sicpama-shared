@@ -1,3 +1,7 @@
+export enum PGContractType {
+  MANAGED_BY_SICPAMA = 'MANAGED_BY_SICPAMA',
+  MANAGED_BY_STORE = 'MANAGED_BY_STORE',
+}
 export enum PaymentType {
   POST_PAID = 'post_paid',
   PRE_PAID = 'pre_paid',
@@ -22,14 +26,20 @@ export enum PaymentGatewayType {
 }
 
 export enum PaymentMethodType {
-  CREDIT_CARD = 'card',
-  CASH = 'cash',
+  NOT_SELECTED = 'not_selected',
+  CREDIT_CARD = 'credit_card',
   WEB_PAY = 'web_pay',
   KAKAO_PAY = 'kakao_pay',
   NAVER_PAY = 'naver_pay',
   SAMSUNG_PAY = 'samsung_pay',
   DROP_IN = 'dropIn',
+  PAY_IN_STORE = 'pay_in_store',
   APPLE_PAY = 'applepay',
+  SCHEME = 'scheme',
+  ADYEN_GOOGLE_PAY = 'paywithgoogle',
+  IDEAL = 'ideal',
+  KLARNA = 'klarna',
+  CASH = 'cash',
   GOOGLE_PAY = 'googlepay',
   VISA = 'visa',
   MASTER_CARD = 'mastercard',

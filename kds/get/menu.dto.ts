@@ -1,14 +1,8 @@
-import {
-  KdsBaseQueryDto,
-  KdsCategoryDomain,
-  KdsPaginationResponse,
-  MenuSortBy,
-  Nullable,
-} from '../..';
+import { IBaseQueryDto, KdsCategoryDomain, IPaginationResponse, MenuSortBy, Nullable } from '../..';
 
 import { KdsInventoryDomain } from './inventory.dto';
 
-export interface KdsGetMenusQueryDto extends KdsBaseQueryDto {
+export interface KdsGetMenusQueryDto extends IBaseQueryDto {
   name: string;
   categoryId: number;
   sortBy: MenuSortBy;
@@ -20,7 +14,7 @@ export interface KdsAdditionalLanguageDto {
   localeCode: string;
 }
 
-export interface KdsMenusDomainDto extends KdsPaginationResponse {
+export interface KdsMenusDomainDto extends IPaginationResponse {
   data: KdsMenuDomain[];
 }
 
