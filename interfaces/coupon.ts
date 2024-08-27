@@ -51,6 +51,7 @@ export interface Criteria {
 }
 
 export interface Rule {
+  isSicpamaMember?: boolean;
   previousVisits?: Condition;
   companionLogins?: Condition;
   menuItems?: MenuItem[];
