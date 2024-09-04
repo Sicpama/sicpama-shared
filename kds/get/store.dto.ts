@@ -15,6 +15,7 @@ export interface KdsStoreDetailsResDto {
   closeTime: string | null;
   foodCourtId: string | null;
   vendorIds: string[] | null;
+  isOpen?: boolean;
 }
 
 export interface KdsStoreAttributeResDto {

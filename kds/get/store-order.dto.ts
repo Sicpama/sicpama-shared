@@ -27,6 +27,7 @@ export interface KdsStoreTableOrderResult {
   subTotal: number;
   paymentGroupId: string | null;
   couponDiscountTotal: number;
+  numberOfSentPickUpMessage?: number;
 }
 
 export interface KdsStoreTableOrdersResDto {
