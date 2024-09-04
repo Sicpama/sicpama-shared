@@ -41,4 +41,5 @@ export interface IStore {
   snsNotificationTemplate: Record<MessageType, string>;
   ownerName: Nullable<string>;
   bankAccountInfo: Nullable<BankAccountInformation>;
+  isOpen?: boolean;
 }

@@ -42,4 +42,6 @@ export enum STORE_ATTRIBUTE_NAME {
   IS_INVENTORY_ENABLED = 'isInventoryEnabled',
   PAYMENT_GATEWAY_MODE = 'paymentGatewayMode', // test || live
   MARKETING_POPUP_ENABLED = 'marketingPopupEnabled',
+  COUNT_NUMBER_OF_SENT_PICK_UP_ENABLED = 'countNumberOfSentPickUpEnabled',
+  KDS_HOME_PAGE_PATH = 'kdsHomePagePath',
 }
