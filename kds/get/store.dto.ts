@@ -1,4 +1,4 @@
-import { ReceiptPrinter } from '../..';
+import { Nullable, ReceiptPrinter } from '../..';
 
 export interface KdsStoreDetailsResDto {
   id: number;
@@ -16,6 +16,8 @@ export interface KdsStoreDetailsResDto {
   foodCourtId: string | null;
   vendorIds: string[] | null;
   isOpen?: boolean;
+  snsNotificationTemplate?: Nullable<string>;
+  paymentGatewayInfo?: Nullable<string>;
 }
 
 export interface KdsStoreAttributeResDto {
