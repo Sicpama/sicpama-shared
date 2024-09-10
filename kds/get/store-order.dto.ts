@@ -1,4 +1,4 @@
-import { KdsTransactionRefundDomain } from '../..';
+import { KdsTransactionRefundDomain, Nullable } from '../..';
 import { PaymentType, PaymentOption } from '../../enums/payment.enum';
 import { OrderStatus, PaymentStatus } from '../../enums/status.enum';
 
@@ -9,6 +9,7 @@ export interface KdsStoreTableOrderResult {
   tableNumber: string;
   isVirtualTable: boolean;
   orderId: string;
+  paymentId: Nullable<string>;
   orderStatus: OrderStatus;
   customerId: string;
   nickName: string | null;
