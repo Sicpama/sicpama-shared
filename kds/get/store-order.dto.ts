@@ -1,3 +1,4 @@
+import { KdsTransactionRefundDomain } from '../..';
 import { PaymentType, PaymentOption } from '../../enums/payment.enum';
 import { OrderStatus, PaymentStatus } from '../../enums/status.enum';
 
@@ -29,6 +30,7 @@ export interface KdsStoreTableOrderResult {
   couponDiscountTotal: number;
   numberOfSentPickUpMessage?: number;
   orderSequentialNumber?: string;
+  refunds?: KdsTransactionRefundDomain[];
 }
 
 export interface KdsStoreTableOrdersResDto {

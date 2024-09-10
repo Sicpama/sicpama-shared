@@ -1,4 +1,4 @@
-import { IPaginationResponse } from '../../../../submodules/sicpama-shared';
+import { IPaginationResponse } from '../../';
 import { PaymentOption, RefundState, RefundStatus } from '../../enums/payment.enum';
 
 export interface KdsTransactionCustomerInfo {
