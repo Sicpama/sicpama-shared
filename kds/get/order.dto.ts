@@ -73,6 +73,7 @@ export interface KdsOrderItem {
   menuSnapshot: KdsBaseMenuSnapshotResDto;
   isMenuShareable: boolean;
   status: OrderItemStatus;
+  updatedAt: Date;
 }
 
 export interface KdsOrderList extends IPaginationResponse {
