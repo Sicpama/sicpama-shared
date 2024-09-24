@@ -1,6 +1,7 @@
 export * from './diner/events/types';
 export * from './diner/dto/join-table';
 export * from './dto/base';
+export * from './dto/coupon-pickup';
 export * from './dto/customer';
 export * from './dto/history';
 export * from './dto/menu';
