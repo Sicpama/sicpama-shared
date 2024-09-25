@@ -9,6 +9,8 @@ export interface PGConfiguration {
   webhookKey?: string;
   idempotencyKey?: string;
   publicKey?: string;
+  widgetSecretKey?: string;
+  widgetClientKey?: string;
 }
 
 export type PaymentGatewayInfo = {
