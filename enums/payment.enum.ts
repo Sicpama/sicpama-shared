@@ -23,6 +23,7 @@ export enum PaymentGatewayType {
   ONE_PG = 'one-pg',
   ADYEN = 'adyen',
   STRIPE = 'stripe',
+  TOSS = 'toss',
 }
 
 export enum PaymentMethodType {
