@@ -11,12 +11,14 @@ export enum OkPosCallback {
   TABLE_MOVE = '/callback/table_change/move',
   SOLD_OUT = '/callback/sold_out/change',
 }
+
 export interface OkPosSalePartialData {
   TABLE_CD: string;
   EXTERNAL_ORDER_NO: string;
   PAY_AMT: string;
   PAY_TYPE: string;
 }
+
 export interface OkPosSaleAllData {
   SALE_DATE: string;
   POS_NO: string;
@@ -26,6 +28,7 @@ export interface OkPosSaleAllData {
   PAY_TYPE: string;
   EXTERNAL_ORDER_NO: string;
 }
+
 export interface OkPosSaleCancelData {
   TABLE_CD: string;
   EXTERNAL_ORDER_NO: string;
@@ -33,12 +36,14 @@ export interface OkPosSaleCancelData {
   APPR_NO: string;
   APPR_DATE: string;
 }
+
 export interface OkPosReturnAllData {
   SALE_DATE: string;
   POS_NO: string;
   BILL_NO: string;
   EXTERNAL_ORDER_NO: string;
 }
+
 export interface OkPosOrderInfoChnageData {
   PROD_CD: string;
   PROD_NM: string;
@@ -60,12 +65,16 @@ export interface OkPosOrderInfoChnageData {
   SDA_CD: string;
   SDS_ORG_DTL_NO: string;
 }
+
 export interface OkPosOrderChangeData {
   TABLE_CD: string;
   EXTERNAL_ORDER_NO: string;
   REMAIN_AMT: string;
-  DATA: OkPosOrderInfoChnageData[];
+  ORDER_STATUS: string;
+  ORDER_NO: string;
+  ORDER_INFO: OkPosOrderInfoChnageData[];
 }
+
 export interface OkPosTableMoveData {
   BEFORE_TABLE_GR_CD: string;
   BEFORE_TABLE_CD: string;
@@ -75,6 +84,7 @@ export interface OkPosTableMoveData {
   TABLE_NM: string;
   EXTERNAL_ORDER_NO: string;
 }
+
 export interface OkPosSoldOutData {
   PROD_CD: string;
   SOLD_OUT_YN: string;
