@@ -18,6 +18,7 @@ export interface KdsStoreDetailsResDto {
   isOpen?: boolean;
   snsNotificationTemplate?: Nullable<Record<MessageType, string>>;
   paymentGatewayInfo?: Nullable<PaymentGatewayInfo>;
+  profilePhoto?: Nullable<string>;
 }
 
 export interface KdsStoreAttributeResDto {
