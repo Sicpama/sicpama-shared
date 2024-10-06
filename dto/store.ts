@@ -42,4 +42,5 @@ export interface IStore {
   ownerName: Nullable<string>;
   bankAccountInfo: Nullable<BankAccountInformation>;
   isOpen?: boolean;
+  profilePhoto?: Nullable<string>;
 }
