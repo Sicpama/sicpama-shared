@@ -3,6 +3,11 @@ export enum SNSProviderType {
   FACEBOOK = 'facebook',
   GOOGLE = 'google',
   APPLE = 'apple',
+  TIKTOK = 'tiktok',
+  THREADS = 'threads',
+  NAVER = 'naver',
+  LINE = 'line',
+  TWITTER = 'twitter', // Renamed X
 }
 
 export enum SnsNotificationProviderEnum {
