@@ -23,6 +23,8 @@ export interface IOrderItemsResDto {
   paymentGroupId?: Nullable<string>;
   couponDiscountTotal: number;
   orderItems: IBaseOrderItemResDto[];
+  printedAt?: Nullable<Date>;
+  updatedAt?: Nullable<Date>;
 }
 
 export interface ICouponResDto {
@@ -78,4 +80,6 @@ export interface IPaidOrderResDto {
   currency: string;
   orderItems: IBaseOrderItemResDto[];
   customer: ICustomerResDto;
+  printedAt?: Nullable<Date>;
+  updatedAt?: Nullable<Date>;
 }
