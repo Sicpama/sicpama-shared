@@ -1,4 +1,12 @@
-import { OrderStatus, PaymentStatus, IBaseOrderItemResDto, ICouponResDto } from '..';
+import {
+  OrderStatus,
+  PaymentStatus,
+  IBaseOrderItemResDto,
+  ICouponResDto,
+  Nullable,
+  IPaymentOptionEnum,
+  PaymentType,
+} from '..';
 
 export interface ISessionHistoryDto {
   orderId: string;
@@ -12,6 +20,11 @@ export interface ISessionHistoryDto {
   storeDiscountTotal: number;
   orderItems: IBaseOrderItemResDto[];
   coupons: ICouponResDto[];
+  paymentId: Nullable<string>;
+  paymentOptionEnum: IPaymentOptionEnum;
+  paymentType: PaymentType;
+  printedAt?: Nullable<Date>;
+  updatedAt?: Nullable<Date>;
 }
 
 export interface ISessionHistoriesDto {
