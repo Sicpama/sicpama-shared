@@ -152,3 +152,19 @@ export interface OrderData {
   returnAll: OkPosReturnAllData;
   tableMove: OkPosTableMoveData;
 }
+
+// OkPos Response
+export interface OrderRequestCmdResData {
+  TABLE_CD: string;
+  EXTERNAL_ORDER_NO: string;
+  ORDER_NO: string;
+}
+
+export interface OrderRequestCmdRes {
+  COMMAND: string;
+  DIRECTION: string;
+  EXTERNAL_CODE: string;
+  RESULT_CODE: string;
+  RESULT_MSG: string;
+  DATA: OrderRequestCmdResData;
+}
