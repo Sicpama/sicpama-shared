@@ -25,6 +25,7 @@ export interface IOrderItemsResDto {
   orderItems: IBaseOrderItemResDto[];
   printedAt?: Nullable<Date>;
   updatedAt?: Nullable<Date>;
+  posReceiptNo?: string;
 }
 
 export interface ICouponResDto {

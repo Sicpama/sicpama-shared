@@ -2,10 +2,12 @@ import { CardInfo, CashInfo, EasyPayInfo, OnlinePGInfo, OrderData, OrderInfo } f
 
 export interface PosOrderData {
   okpos?: OrderData;
+  raptor?: any; // TODO: Raptor data structure is not unified yet
 }
 
 export interface PosOrderItemData {
   okpos?: OrderInfo;
+  raptor?: any; // TODO: Raptor data structure is not unified yet
 }
 
 export interface PosPaymentData {
@@ -15,4 +17,5 @@ export interface PosPaymentData {
     cashInfo?: CashInfo;
     onlinePGInfo?: OnlinePGInfo;
   };
+  raptor?: any; // TODO: Raptor data structure is not unified yet
 }
