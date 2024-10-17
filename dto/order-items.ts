@@ -83,4 +83,5 @@ export interface IPaidOrderResDto {
   customer: ICustomerResDto;
   printedAt?: Nullable<Date>;
   updatedAt?: Nullable<Date>;
+  posReceiptNo?: string;
 }
