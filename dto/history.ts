@@ -25,6 +25,7 @@ export interface ISessionHistoryDto {
   paymentType: PaymentType;
   printedAt?: Nullable<Date>;
   updatedAt?: Nullable<Date>;
+  posReceiptNo?: string;
 }
 
 export interface ISessionHistoriesDto {

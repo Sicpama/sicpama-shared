@@ -29,6 +29,7 @@ export enum DINER_EVENT {
   RE_ADD_ORDER = 're-add-order',
   BACK_TO_TAB = 'back-to-tab',
   START_SPIN_THE_WHEEL = 'start-spin-the-wheel',
+  PAYMENT_DONE_RAPTOR_POS = 'payment-done-raptor-pos',
 }
 
 export interface DinerStartSpinTheWheel {
