@@ -44,4 +44,7 @@ export enum STORE_ATTRIBUTE_NAME {
   MARKETING_POPUP_ENABLED = 'marketingPopupEnabled',
   COUNT_NUMBER_OF_SENT_PICK_UP_ENABLED = 'countNumberOfSentPickUpEnabled',
   KDS_HOME_PAGE_PATH = 'kdsHomePagePath',
+  MAIL_ORDER_SALES_REGISTRATION_NUMBER = 'mailOrderSalesRegistrationNumber',
+  LOGIN_OPTIONS = 'loginOptions',
+  SICPAMA_LOGO_DISABLED = 'sicpamaLogoDisabled',
 }
