@@ -45,6 +45,7 @@ export enum PaymentMethodType {
   VISA = 'visa',
   MASTER_CARD = 'mastercard',
   AIRWALLEX_PAY = 'airwallex_pay',
+  PAYPAL = 'paypal',
 }
 
 export enum KiccPaymentStatusCode {
