@@ -157,3 +157,9 @@ export interface TossCancelCashReceiptObject {
 export interface TossDiscountObject {
   amount: number;
 }
+
+export interface TossPaymentConfirmRequest {
+  paymentKey: string;
+  orderId: string;
+  amount: number;
+}
