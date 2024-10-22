@@ -1,5 +1,6 @@
 import {
   TossAcquireStatus,
+  TossKeyType,
   TossPaymentResultStatus,
   TossPaymentType,
   TossRefundStatus,
@@ -162,6 +163,7 @@ export interface TossPaymentConfirmRequest {
   paymentKey: string;
   orderId: string;
   amount: number;
+  apiKeyType: TossKeyType;
 }
 
 export interface TossPaymentConfirmResponse {

@@ -116,3 +116,8 @@ export enum TossSettlementStatus {
   INCOMPLETED = 'INCOMPLETED',
   COMPLETED = 'COMPLETED',
 }
+
+export enum TossKeyType {
+  WIDGET = 'widget',
+  API = 'api',
+}
