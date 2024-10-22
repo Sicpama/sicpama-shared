@@ -78,3 +78,41 @@ export enum RefundReasonEnum {
   FRAUDULENT_CHARGE = 'fraudulentCharge',
   OTHER = 'other',
 }
+
+export enum TossPaymentResultStatus {
+  READY = 'READY',
+  IN_PROGRESS = 'IN_PROGRESS',
+  WAITING_FOR_DEPOSIT = 'WAITING_FOR_DEPOSIT',
+  DONE = 'DONE',
+  CANCELED = 'CANCELED',
+  PARTIAL_CANCELED = 'PARTIAL_CANCELED',
+  ABORTED = 'ABORTED',
+  EXPIRED = 'EXPIRED',
+}
+
+export enum TossPaymentType {
+  NORMAL = 'NORMAL',
+  BILLING = 'BILLING',
+  BRANDPAY = 'BRANDPAY',
+}
+
+export enum TossAcquireStatus {
+  READY = 'READY',
+  REQUESTED = 'REQUESTED',
+  COMPLETED = 'COMPLETED',
+  CANCEL_REQUESTED = 'CANCEL_REQUESTED',
+  CANCELED = 'CANCELED',
+}
+
+export enum TossRefundStatus {
+  NONE = 'NONE',
+  PENDING = 'PENDING',
+  FAILED = 'FAILED',
+  PARTIAL_FAILED = 'PARTIAL_FAILED',
+  COMPLETED = 'COMPLETED',
+}
+
+export enum TossSettlementStatus {
+  INCOMPLETED = 'INCOMPLETED',
+  COMPLETED = 'COMPLETED',
+}
