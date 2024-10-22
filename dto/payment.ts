@@ -165,6 +165,7 @@ export interface TossPaymentConfirmRequest {
 }
 
 export interface TossPaymentConfirmResponse {
-  status: string;
+  status: number;
+  statusMessage: string;
   data: TossPaymentObject;
 }
