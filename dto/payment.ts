@@ -163,3 +163,8 @@ export interface TossPaymentConfirmRequest {
   orderId: string;
   amount: number;
 }
+
+export interface TossPaymentConfirmResponse {
+  status: string;
+  data: TossPaymentObject;
+}
